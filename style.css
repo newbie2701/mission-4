@@ -1,0 +1,133 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Container utama */
+.container {
+  width: 90%;
+  max-width: 420px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Profile User */
+.profile h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.profile p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Input Box */
+.todo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  resize: none;
+}
+
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background: #6e8efb;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5a75e5;
+}
+
+/* List Styling */
+.todo-list, .done-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+h3 {
+  background: #6e8efb;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+li.done {
+  text-decoration: line-through;
+  color: gray;
+  background: #e0e0e0;
+}
+
+/* Hapus Semua */
+#clear-btn {
+  background: #e74c3c;
+  margin-top: 15px;
+}
+
+#clear-btn:hover {
+  background: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+      width: 100%;
+  }
+}

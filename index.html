@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <!-- Profile User -->
+        <div class="profile">
+            <h2 id="user-name">Putera anugrah - Manager</h2>
+            <p id="current-time"></p>
+        </div>
+
+        <!-- Input To-Do -->
+        <div class="todo-input">
+            <textarea id="task" placeholder="Tambahkan tugas..."></textarea>
+            <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button onclick="addTask()">Tambah Tugas</button>
+        </div>
+
+        <!-- To-Do List -->
+        <div class="todo-list">
+            <h3>To-Do List</h3>
+            <ul id="todo-items"></ul>
+        </div>
+
+        <!-- Done List -->
+        <div class="done-list">
+            <h3>Done</h3>
+            <ul id="done-items"></ul>
+        </div>
+
+        <!-- Button Hapus Semua -->
+        <button id="clear-btn" onclick="deleteAllTasks()">Hapus Semua</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
